@@ -1,0 +1,15 @@
+.env
+
+# Root node modules
+node_modules/
+
+# Frontend
+ishan-portfolio/node_modules/
+ishan-portfolio/.next/
+ishan-portfolio/.env.local
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/logs/
