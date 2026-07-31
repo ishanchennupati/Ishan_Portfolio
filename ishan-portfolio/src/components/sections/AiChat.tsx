@@ -56,7 +56,7 @@ export default function AiChat() {
     }, 1000);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/chat", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -118,7 +118,7 @@ export default function AiChat() {
       clearInterval(thinkingInterval);
 
       setTyping(false);
-    } catch (error) {
+    } catch (_error) {
       clearInterval(thinkingInterval);
       await new Promise((resolve) => setTimeout(resolve, 2000));
 

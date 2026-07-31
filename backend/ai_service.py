@@ -11,7 +11,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 
 
 # def generate_ai_response(messages):
-    
+
 #     conversation=""
 #     for msg in messages:
 #         conversation += f"{msg.role}: {msg.text}\n"
@@ -25,7 +25,6 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 #         Respond naturally to the latest user message.
 #         """
 
-    
 
 #     response = model.generate_content(
 #         prompt,
@@ -36,6 +35,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 #     )
 
 #     return response.text
+
 
 def stream_ai_response(messages):
 
@@ -61,14 +61,13 @@ def stream_ai_response(messages):
                 max_output_tokens=400,
                 temperature=0.65,
             ),
-            stream=True
+            stream=True,
         )
 
         for chunk in response:
 
             if chunk.text:
                 yield chunk.text
-            print("CHUNK:", chunk.text)
 
     except Exception as e:
 

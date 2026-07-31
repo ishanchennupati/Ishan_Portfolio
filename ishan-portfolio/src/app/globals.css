@@ -103,22 +103,3 @@ body {
 /* .typing-dot-1 { animation: typing-dot 1.2s infinite; }
 .typing-dot-2 { animation: typing-dot 1.2s 0.2s infinite; }
 .typing-dot-3 { animation: typing-dot 1.2s 0.4s infinite; } */
-
-.cursor {
-  animation: blink 1s infinite;
-  color: red;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
