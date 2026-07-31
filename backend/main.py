@@ -12,7 +12,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "https://ishan-portfolio-fe1nbufhd-ishan-e9f1.vercel.app",
+        "https://ishan-portfolio-a335zyn2b-ishan-e9f1.vercel.app/",
     ],
     allow_credentials=True,
     allow_methods=["*"],
